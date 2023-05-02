@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<property name="FOLDER_NAME" value="./logs" />
+<property resource="application.properties" /> 	
+	<!-- configuring console appender -->
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<!-- configuring pattern Layout -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+	<!-- end of the console appender -->
+
+	<!-- configuring Rolling file appender -->
+	<appender name="FILE-AUDIT"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${FOLDER_NAME}/debug.log</file>
+		<!-- configuring pattern appender -->
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- roll over daily -->
+			<fileNamePattern>${FOLDER_NAME}/archived/debug.%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+	</appender>
+	
+	<!-- info type start -->
+	
+	<!-- configuring Rolling file appender -->
+	<appender name="FILE-AUDIT"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${FOLDER_NAME}/info.log</file>
+		<!-- configuring pattern appender -->
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- roll over daily -->
+			<fileNamePattern>${FOLDER_NAME}/archived/info.%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+	</appender>
+	
+
+	<!-- error type start -->
+
+	<appender name="FILE-ERROR"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${FOLDER_NAME}/warn.log</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>WARN</level>
+		</filter>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- roll over daily when the file size reached to given size which is 
+				10MB as per given below -->
+			<fileNamePattern>${FOLDER_NAME}/archived/warn.%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+	</appender>
+
+	<appender name="FILE-ERROR1"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${FOLDER_NAME}/error.log</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			roll over daily
+			<fileNamePattern>${FOLDER_NAME}/archived/error.%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+	</appender>
+
+	<appender name="FILE-ERROR2"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${FOLDER_NAME}/trace.log</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- roll over daily -->
+			<fileNamePattern>${FOLDER_NAME}/archived/trace.%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>1
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+	</appender>
+
+	<!-- Send logs to both console and file audit -->
+	<logger name="com.narvee" level="trace" additivity="false">
+		<appender-ref ref="FILE-AUDIT" />
+		<appender-ref ref="FILE-ERROR" />
+		<appender-ref ref="FILE-ERROR1" />
+		<appender-ref ref="FILE-ERROR2" />
+		<appender-ref ref="STDOUT" />      <!-- for console -->
+	</logger>
+
+	<!-- <root level="info"> -->
+	<root level="debug">
+		<appender-ref ref="FILE-ERROR" />          <!-- warning one -->
+	</root>
+
+</configuration> 

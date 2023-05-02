@@ -1,0 +1,488 @@
+2023-05-02 09:30:09,991 WARN  HikariPool$HouseKeeper:788 -[] HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=10h40m54s276ms988µs300ns).
+2023-05-02 09:48:51,200 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213 -[] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-02 09:48:51,225 INFO  DirectJDKLog:173 -[] Stopping service [Tomcat]
+2023-05-02 09:48:51,231 WARN  DirectJDKLog:173 -[] The web application [usit] appears to have started a thread named [HikariPool-6 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-05-02 09:48:51,232 WARN  DirectJDKLog:173 -[] The web application [usit] appears to have started a thread named [logback-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-05-02 09:48:51,232 WARN  DirectJDKLog:173 -[] The web application [usit] appears to have started a thread named [logback-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-05-02 09:48:51,243 INFO  AbstractEntityManagerFactoryBean:651 -[] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-02 09:48:51,243 INFO  HikariDataSource:350 -[] HikariPool-6 - Shutdown initiated...
+2023-05-02 09:48:51,251 INFO  HikariDataSource:352 -[] HikariPool-6 - Shutdown completed.
+2023-05-02 09:48:51,347 INFO  UsitPortalApplication:25 -[]  Application started
+2023-05-02 09:48:51,347 INFO  UsitPortalApplication:26 -[] inside class !!!, Method !!!: main Method
+2023-05-02 09:48:51,347 WARN  UsitPortalApplication:28 -[] WARN level message!!
+2023-05-02 09:48:51,347 ERROR UsitPortalApplication:29 -[] ERROR level message !!
+2023-05-02 09:48:51,387 INFO  StartupInfoLogger:55 -[] Starting UsitPortalApplication using Java 17.0.2 on DESKTOP-08PSRH1 with PID 6900 (D:\lak\UsitPortal (2)-latest\UsitPortal\target\classes started by admin in D:\lak\UsitPortal (2)-latest\UsitPortal)
+2023-05-02 09:48:51,387 INFO  SpringApplication:634 -[] No active profile set, falling back to 1 default profile: "default"
+2023-05-02 09:48:52,587 INFO  RepositoryConfigurationDelegate:132 -[] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-02 09:48:52,693 INFO  RepositoryConfigurationDelegate:201 -[] Finished Spring Data repository scanning in 105 ms. Found 22 JPA repository interfaces.
+2023-05-02 09:48:53,252 INFO  TomcatWebServer:108 -[] Tomcat initialized with port(s): 8090 (http)
+2023-05-02 09:48:53,253 INFO  DirectJDKLog:173 -[] Starting service [Tomcat]
+2023-05-02 09:48:53,253 INFO  DirectJDKLog:173 -[] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-05-02 09:48:53,301 INFO  DirectJDKLog:173 -[] Initializing Spring embedded WebApplicationContext
+2023-05-02 09:48:53,301 INFO  ServletWebServerApplicationContext:292 -[] Root WebApplicationContext: initialization completed in 1912 ms
+2023-05-02 09:48:53,333 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 -[] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-02 09:48:53,359 INFO  LogHelper:31 -[] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-02 09:48:53,368 INFO  HikariDataSource:110 -[] HikariPool-7 - Starting...
+2023-05-02 09:48:53,377 INFO  HikariDataSource:123 -[] HikariPool-7 - Start completed.
+2023-05-02 09:48:53,378 INFO  Dialect:175 -[] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-02 09:48:53,826 INFO  JtaPlatformInitiator:52 -[] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-02 09:48:53,827 INFO  AbstractEntityManagerFactoryBean:437 -[] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-02 09:48:53,844 INFO  ApiSecurityConfig:81 -[] !!! inside class: ApiSecurityConfig, !! method: passwordEncoder
+2023-05-02 09:48:54,212 INFO  ApiSecurityConfig:50 -[] !!! inside class: ApiSecurityConfig, !! method: configure(AuthenticationManagerBuilder)
+2023-05-02 09:48:54,215 INFO  ApiSecurityConfig:66 -[] !!! inside class: ApiSecurityConfig, !! method: jwtAuthFilterRegister(JwtAuthenticationFilter filter)
+2023-05-02 09:48:54,228 INFO  RegistrationBean:50 -[] Filter jwtAuthenticationFilter was not registered (disabled)
+2023-05-02 09:48:54,376 INFO  ApiSecurityConfig:75 -[] !!! inside class: ApiSecurityConfig, !! method:authenticationManagerBean
+2023-05-02 09:48:54,662 INFO  ApiSecurityConfig:50 -[] !!! inside class: ApiSecurityConfig, !! method: configure(AuthenticationManagerBuilder)
+2023-05-02 09:48:54,664 INFO  ApiSecurityConfig:56 -[] !!! inside class: ApiSecurityConfig, !! method: configure(HttpSecurity http)
+2023-05-02 09:48:54,666 INFO  ApiSecurityConfig:44 -[] !!! inside class: ApiSecurityConfig, !! method: configure(WebSecurity web)
+2023-05-02 09:48:54,666 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/signin']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 09:48:54,666 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/signin']
+2023-05-02 09:48:54,666 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/sendlink']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 09:48:54,666 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/sendlink']
+2023-05-02 09:48:54,667 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/logout/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 09:48:54,667 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/logout/*']
+2023-05-02 09:48:54,667 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/change_password']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 09:48:54,667 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/change_password']
+2023-05-02 09:48:54,676 INFO  PropertySourcedRequestMappingHandlerMapping:69 -[] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-02 09:48:54,723 INFO  DefaultSecurityFilterChain:55 -[] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65fb1876, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b68a37f, org.springframework.security.web.context.SecurityContextPersistenceFilter@fcc18e6, org.springframework.security.web.header.HeaderWriterFilter@8b57343, org.springframework.web.filter.CorsFilter@30db7966, org.springframework.security.web.authentication.logout.LogoutFilter@73b662ab, com.narvee.usit.filter.JwtAuthenticationFilter@7c927832, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2998f49a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a94a581, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ab8cad4, org.springframework.security.web.session.SessionManagementFilter@3564669a, org.springframework.security.web.access.ExceptionTranslationFilter@508ecf9a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70eb5455]
+2023-05-02 09:48:54,744 INFO  OptionalLiveReloadServer:59 -[] LiveReload server is running on port 35729
+2023-05-02 09:48:54,817 INFO  TomcatWebServer:220 -[] Tomcat started on port(s): 8090 (http) with context path '/usit'
+2023-05-02 09:48:54,818 INFO  DocumentationPluginsBootstrapper:160 -[] Context refreshed
+2023-05-02 09:48:54,819 INFO  DocumentationPluginsBootstrapper:163 -[] Found 1 custom documentation plugin(s)
+2023-05-02 09:48:54,825 INFO  ApiListingReferenceScanner:41 -[] Scanning for api listing references
+2023-05-02 09:48:54,877 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllMailsUsingGET_1
+2023-05-02 09:48:54,878 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getMailByIDUsingGET_1
+2023-05-02 09:48:54,879 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: downloadresumeUsingGET_1
+2023-05-02 09:48:54,881 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: removeFileUsingGET_1
+2023-05-02 09:48:54,887 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadMultipleFile2UsingPOST_1
+2023-05-02 09:48:54,903 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingGET_1
+2023-05-02 09:48:54,904 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: duplicateCheckUsingGET_1
+2023-05-02 09:48:54,908 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadexcelUsingPOST_1
+2023-05-02 09:48:54,919 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllRolesUsingGET_1
+2023-05-02 09:48:54,931 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_1
+2023-05-02 09:48:54,936 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_2
+2023-05-02 09:48:54,942 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_3
+2023-05-02 09:48:54,944 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllRolesUsingGET_2
+2023-05-02 09:48:54,946 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: listrecruiterUsingGET_1
+2023-05-02 09:48:54,949 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: approveVMSUsingGET_1
+2023-05-02 09:48:54,949 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingGET_2
+2023-05-02 09:48:54,950 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: deleteUsingDELETE_1
+2023-05-02 09:48:54,950 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: duplicateCheckUsingGET_2
+2023-05-02 09:48:54,951 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: gateallUsingGET_1
+2023-05-02 09:48:54,952 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getbyIdUsingGET_1
+2023-05-02 09:48:54,954 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadexcelUsingPOST_2
+2023-05-02 09:48:54,956 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: findPaginatedUsingGET_1
+2023-05-02 09:48:54,963 INFO  StartupInfoLogger:61 -[] Started UsitPortalApplication in 3.605 seconds (JVM running for 230397.043)
+2023-05-02 09:48:54,965 INFO  ConditionEvaluationDeltaLoggingListener:63 -[] Condition evaluation unchanged
+2023-05-02 09:49:00,053 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:50:03,143 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:51:03,621 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:52:03,740 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:53:02,799 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:54:00,016 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:54:07,339 INFO  DirectJDKLog:173 -[] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-02 09:54:07,339 INFO  FrameworkServlet:525 -[] Initializing Servlet 'dispatcherServlet'
+2023-05-02 09:54:07,341 INFO  FrameworkServlet:547 -[] Completed initialization in 2 ms
+2023-05-02 09:54:07,418 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:07,499 ERROR DirectJDKLog:175 -[] Servlet.service() for servlet [dispatcherServlet] in context with path [/usit] threw exception
+com.narvee.usit.exception.JwtTokenMalformedException: Expired JWT token
+	at com.narvee.usit.util.JwtUtil.validateToken(JwtUtil.java:63) ~[classes/:na]
+	at com.narvee.usit.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:44) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.4.jar:5.7.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2023-05-02 09:54:07,511 INFO  ApiAuthenticationEntryPoint:21 -[]   ApiAuthenticationEntryPoint commence
+2023-05-02 09:54:15,536 INFO  LoginController:94 -[] !!! inside class: LoginController, !! method: generateJwtToken 
+2023-05-02 09:54:15,732 INFO  LoginLogoutListener:34 -[] User logged in: org.springframework.security.core.userdetails.User [Username=saikiran@narveetech.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[Super Admin]]
+2023-05-02 09:54:15,733 INFO  LoginLogoutListener:38 -[] Login time: 2023-05-02T09:54:15.733798800
+2023-05-02 09:54:15,833 INFO  LoginServiceImpl:32 -[] LoginServiceImpl.findByEmail()
+2023-05-02 09:54:15,838 INFO  UserServiceImpl:44 -[] !!! inside class : UserAuthService, !! method : saveUser
+2023-05-02 09:54:15,839 INFO  UserServiceImpl:76 -[] UserServiceImpl.findUserByEmail()
+2023-05-02 09:54:15,842 INFO  LoginController:188 -[] !!! inside class: LoginController, !! method: UserDetails => 
+2023-05-02 09:54:16,933 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:16,937 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:19,716 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:19,717 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:19,734 INFO  ConsultantController:243 -[] Consultant Controller Get All
+2023-05-02 09:54:19,749 INFO  ConsultantController:245 -[] !!! inside class: ConsultantController, !!method: getAllConsultant
+2023-05-02 09:54:22,169 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:22,170 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:22,170 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:22,171 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:22,171 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:22,171 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:22,175 INFO  QualificationController:66 -[] !!! inside class: QualificationController, !! method: getAllQualifications
+2023-05-02 09:54:22,175 INFO  TechnologyController:198 -[] !!! inside class: TechnologyController, !! method: getAllTech
+2023-05-02 09:54:22,175 INFO  QualificationServiceImpl:48 -[] !!! inside class: QualificationServiceImpl, !! method: getAllQualification
+2023-05-02 09:54:22,177 INFO  VisaController:131 -[] !!! inside class: CityController, !! method: getAllCities
+2023-05-02 09:54:22,180 INFO  TechnologyServiceImpl:58 -[] TechnologyServiceImpl.getAllTechnologies2()
+2023-05-02 09:54:34,012 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:34,013 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:34,015 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:34,016 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:34,023 INFO  ConsultantServiceImpl:187 -[] Calling custom method to check duplicate consultant with email
+2023-05-02 09:54:34,041 INFO  ConsultantController:94 -[] !!! inside class: Consultant , !! method: check duplicate with email
+2023-05-02 09:54:34,044 INFO  ConsultantController:73 -[] !!! inside class: Consultant , !! method: check duplicate with number
+2023-05-02 09:54:34,243 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:54:34,244 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:54:34,249 INFO  ConsultantServiceImpl:187 -[] Calling custom method to check duplicate consultant with email
+2023-05-02 09:54:34,255 INFO  ConsultantController:94 -[] !!! inside class: Consultant , !! method: check duplicate with email
+2023-05-02 09:55:03,545 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:55:03,577 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:55:03,579 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:55:03,589 INFO  ConsultantServiceImpl:187 -[] Calling custom method to check duplicate consultant with email
+2023-05-02 09:55:03,591 INFO  ConsultantController:91 -[] !!! inside class: Consultant , !! method: check duplicate with email
+2023-05-02 09:55:21,481 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:55:21,482 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:55:21,486 INFO  TechnologyController:209 -[] TechnologyController.getTechnologyByID()
+2023-05-02 09:55:57,471 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:55:57,472 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:55:57,481 INFO  ConsultantController:143 -[] Consultant Controller Saving
+2023-05-02 09:55:57,481 INFO  ConsultantServiceImpl:94 -[] Saving Consultant
+2023-05-02 09:55:57,568 INFO  EmailService:133 -[] !!! inside class: EmailService, !! method: employeeRegistarionMail
+2023-05-02 09:56:00,028 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:56:00,869 INFO  EmailService:248 -[] !!! inside class: EmailService, !! method: submission mailing send and update
+2023-05-02 09:56:00,932 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:56:00,934 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:56:00,956 INFO  ConsultantServiceImpl:156 -[] get single getconsulatntbyId
+2023-05-02 09:56:00,960 INFO  JwtAuthenticationFilter:36 -[] !!! inside class: JwtAuthenticationFilter, !! method: doFilterInternal
+2023-05-02 09:56:00,961 INFO  JwtAuthenticationFilter:45 -[] Generated Token => eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWlraXJhbkBuYXJ2ZWV0ZWNoLmNvbSIsImlhdCI6MTY4MzAwMTQ1NSwiZXhwIjoxNjgzMDA3NDU1fQ.z-2QwSdmDaSYdV-k4sTbwCgLRcHwfIfOn72YdGu94URG4etGCf0QvypLjwqhKPdJx29gJ2jcBE4ol0uAohSPkA
+2023-05-02 09:56:00,962 INFO  ConsultantServiceImpl:193 -[] Saving COnsultant files
+2023-05-02 09:56:00,967 INFO  ConsultantController:243 -[] Consultant Controller Get All
+2023-05-02 09:56:00,971 INFO  ConsultantController:245 -[] !!! inside class: ConsultantController, !!method: getAllConsultant
+2023-05-02 09:57:00,038 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:58:02,846 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 09:59:00,040 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:00:00,017 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:01:00,016 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:02:00,032 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:03:00,032 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:04:00,045 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:05:00,026 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:06:03,591 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:07:00,030 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:08:00,028 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:09:03,018 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:10:00,023 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:11:03,004 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:12:00,014 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:13:00,016 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:14:00,036 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:15:00,022 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:16:00,008 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:17:02,816 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:18:02,834 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:19:00,033 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:20:00,030 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:21:03,516 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:22:00,026 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:23:00,027 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:24:00,028 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:25:00,023 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:26:00,024 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:27:00,024 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:28:02,856 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:29:03,516 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:30:00,010 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:31:00,019 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:32:02,922 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:33:00,008 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:34:03,498 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:35:00,025 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:36:02,989 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:37:02,926 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:38:00,036 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:39:00,027 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:40:00,013 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:41:00,027 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:42:02,875 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:43:00,019 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:44:00,027 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:45:00,007 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:46:03,784 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:47:00,012 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:48:02,866 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:49:02,935 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:50:03,587 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:51:03,288 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:51:40,126 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213 -[] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-02 10:51:40,147 INFO  DirectJDKLog:173 -[] Stopping service [Tomcat]
+2023-05-02 10:51:40,149 INFO  DirectJDKLog:173 -[] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-02 10:51:40,157 WARN  DirectJDKLog:173 -[] The web application [usit] appears to have started a thread named [HikariPool-7 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-05-02 10:51:40,175 INFO  AbstractEntityManagerFactoryBean:651 -[] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-02 10:51:40,176 INFO  HikariDataSource:350 -[] HikariPool-7 - Shutdown initiated...
+2023-05-02 10:51:40,184 INFO  HikariDataSource:352 -[] HikariPool-7 - Shutdown completed.
+2023-05-02 10:51:40,286 INFO  UsitPortalApplication:25 -[]  Application started
+2023-05-02 10:51:40,286 INFO  UsitPortalApplication:26 -[] inside class !!!, Method !!!: main Method
+2023-05-02 10:51:40,287 WARN  UsitPortalApplication:28 -[] WARN level message!!
+2023-05-02 10:51:40,287 ERROR UsitPortalApplication:29 -[] ERROR level message !!
+2023-05-02 10:51:40,320 INFO  StartupInfoLogger:55 -[] Starting UsitPortalApplication using Java 17.0.2 on DESKTOP-08PSRH1 with PID 6900 (D:\lak\UsitPortal (2)-latest\UsitPortal\target\classes started by admin in D:\lak\UsitPortal (2)-latest\UsitPortal)
+2023-05-02 10:51:40,320 INFO  SpringApplication:634 -[] No active profile set, falling back to 1 default profile: "default"
+2023-05-02 10:51:40,987 INFO  RepositoryConfigurationDelegate:132 -[] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-02 10:51:41,077 INFO  RepositoryConfigurationDelegate:201 -[] Finished Spring Data repository scanning in 89 ms. Found 22 JPA repository interfaces.
+2023-05-02 10:51:41,308 INFO  TomcatWebServer:108 -[] Tomcat initialized with port(s): 8090 (http)
+2023-05-02 10:51:41,309 INFO  DirectJDKLog:173 -[] Starting service [Tomcat]
+2023-05-02 10:51:41,309 INFO  DirectJDKLog:173 -[] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-05-02 10:51:41,328 INFO  DirectJDKLog:173 -[] Initializing Spring embedded WebApplicationContext
+2023-05-02 10:51:41,328 INFO  ServletWebServerApplicationContext:292 -[] Root WebApplicationContext: initialization completed in 1005 ms
+2023-05-02 10:51:41,349 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 -[] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-02 10:51:41,370 INFO  LogHelper:31 -[] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-02 10:51:41,378 INFO  HikariDataSource:110 -[] HikariPool-8 - Starting...
+2023-05-02 10:51:41,387 INFO  HikariDataSource:123 -[] HikariPool-8 - Start completed.
+2023-05-02 10:51:41,388 INFO  Dialect:175 -[] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-02 10:51:41,841 INFO  JtaPlatformInitiator:52 -[] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-02 10:51:41,842 INFO  AbstractEntityManagerFactoryBean:437 -[] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-02 10:51:41,858 INFO  ApiSecurityConfig:81 -[] !!! inside class: ApiSecurityConfig, !! method: passwordEncoder
+2023-05-02 10:51:42,146 INFO  ApiSecurityConfig:50 -[] !!! inside class: ApiSecurityConfig, !! method: configure(AuthenticationManagerBuilder)
+2023-05-02 10:51:42,147 INFO  ApiSecurityConfig:66 -[] !!! inside class: ApiSecurityConfig, !! method: jwtAuthFilterRegister(JwtAuthenticationFilter filter)
+2023-05-02 10:51:42,156 INFO  RegistrationBean:50 -[] Filter jwtAuthenticationFilter was not registered (disabled)
+2023-05-02 10:51:42,290 INFO  ApiSecurityConfig:75 -[] !!! inside class: ApiSecurityConfig, !! method:authenticationManagerBean
+2023-05-02 10:51:42,629 INFO  ApiSecurityConfig:50 -[] !!! inside class: ApiSecurityConfig, !! method: configure(AuthenticationManagerBuilder)
+2023-05-02 10:51:42,631 INFO  ApiSecurityConfig:56 -[] !!! inside class: ApiSecurityConfig, !! method: configure(HttpSecurity http)
+2023-05-02 10:51:42,634 INFO  ApiSecurityConfig:44 -[] !!! inside class: ApiSecurityConfig, !! method: configure(WebSecurity web)
+2023-05-02 10:51:42,634 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/signin']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:51:42,634 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/signin']
+2023-05-02 10:51:42,634 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/sendlink']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:51:42,635 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/sendlink']
+2023-05-02 10:51:42,635 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/logout/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:51:42,635 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/logout/*']
+2023-05-02 10:51:42,635 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/change_password']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:51:42,635 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/change_password']
+2023-05-02 10:51:42,648 INFO  PropertySourcedRequestMappingHandlerMapping:69 -[] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-02 10:51:42,702 INFO  DefaultSecurityFilterChain:55 -[] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6063f748, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b52c7a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@55aad045, org.springframework.security.web.header.HeaderWriterFilter@561dd612, org.springframework.web.filter.CorsFilter@31c1464c, org.springframework.security.web.authentication.logout.LogoutFilter@7026cafd, com.narvee.usit.filter.JwtAuthenticationFilter@21df7ced, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5555e2d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dc0032a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a4fb898, org.springframework.security.web.session.SessionManagementFilter@5e98097a, org.springframework.security.web.access.ExceptionTranslationFilter@2604cf73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@698845a1]
+2023-05-02 10:51:42,727 INFO  OptionalLiveReloadServer:59 -[] LiveReload server is running on port 35729
+2023-05-02 10:51:42,809 INFO  TomcatWebServer:220 -[] Tomcat started on port(s): 8090 (http) with context path '/usit'
+2023-05-02 10:51:42,810 INFO  DocumentationPluginsBootstrapper:160 -[] Context refreshed
+2023-05-02 10:51:42,811 INFO  DocumentationPluginsBootstrapper:163 -[] Found 1 custom documentation plugin(s)
+2023-05-02 10:51:42,821 INFO  ApiListingReferenceScanner:41 -[] Scanning for api listing references
+2023-05-02 10:51:42,901 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllMailsUsingGET_1
+2023-05-02 10:51:42,902 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getMailByIDUsingGET_1
+2023-05-02 10:51:42,904 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: downloadresumeUsingGET_1
+2023-05-02 10:51:42,906 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: removeFileUsingGET_1
+2023-05-02 10:51:42,911 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadMultipleFile2UsingPOST_1
+2023-05-02 10:51:42,933 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingGET_1
+2023-05-02 10:51:42,934 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: duplicateCheckUsingGET_1
+2023-05-02 10:51:42,941 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadexcelUsingPOST_1
+2023-05-02 10:51:42,956 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllRolesUsingGET_1
+2023-05-02 10:51:42,967 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_1
+2023-05-02 10:51:42,971 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_2
+2023-05-02 10:51:42,977 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_3
+2023-05-02 10:51:42,979 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllRolesUsingGET_2
+2023-05-02 10:51:42,981 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: listrecruiterUsingGET_1
+2023-05-02 10:51:42,985 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: approveVMSUsingGET_1
+2023-05-02 10:51:42,986 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingGET_2
+2023-05-02 10:51:42,987 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: deleteUsingDELETE_1
+2023-05-02 10:51:42,987 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: duplicateCheckUsingGET_2
+2023-05-02 10:51:42,988 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: gateallUsingGET_1
+2023-05-02 10:51:42,990 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getbyIdUsingGET_1
+2023-05-02 10:51:42,993 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadexcelUsingPOST_2
+2023-05-02 10:51:42,996 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: findPaginatedUsingGET_1
+2023-05-02 10:51:43,005 INFO  StartupInfoLogger:61 -[] Started UsitPortalApplication in 2.712 seconds (JVM running for 234165.085)
+2023-05-02 10:51:43,006 INFO  ConditionEvaluationDeltaLoggingListener:63 -[] Condition evaluation unchanged
+2023-05-02 10:52:00,040 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:53:00,034 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:54:02,908 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:55:02,872 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:56:00,021 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:57:00,028 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:58:00,025 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:59:02,689 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 10:59:33,811 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213 -[] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-02 10:59:33,829 INFO  DirectJDKLog:173 -[] Stopping service [Tomcat]
+2023-05-02 10:59:33,835 WARN  DirectJDKLog:173 -[] The web application [usit] appears to have started a thread named [HikariPool-8 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-05-02 10:59:33,845 INFO  AbstractEntityManagerFactoryBean:651 -[] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-02 10:59:33,845 INFO  HikariDataSource:350 -[] HikariPool-8 - Shutdown initiated...
+2023-05-02 10:59:33,853 INFO  HikariDataSource:352 -[] HikariPool-8 - Shutdown completed.
+2023-05-02 10:59:33,945 INFO  UsitPortalApplication:25 -[]  Application started
+2023-05-02 10:59:33,946 INFO  UsitPortalApplication:26 -[] inside class !!!, Method !!!: main Method
+2023-05-02 10:59:33,946 WARN  UsitPortalApplication:28 -[] WARN level message!!
+2023-05-02 10:59:33,946 ERROR UsitPortalApplication:29 -[] ERROR level message !!
+2023-05-02 10:59:33,979 INFO  StartupInfoLogger:55 -[] Starting UsitPortalApplication using Java 17.0.2 on DESKTOP-08PSRH1 with PID 6900 (D:\lak\UsitPortal (2)-latest\UsitPortal\target\classes started by admin in D:\lak\UsitPortal (2)-latest\UsitPortal)
+2023-05-02 10:59:33,979 INFO  SpringApplication:634 -[] No active profile set, falling back to 1 default profile: "default"
+2023-05-02 10:59:34,266 INFO  RepositoryConfigurationDelegate:132 -[] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-02 10:59:34,334 INFO  RepositoryConfigurationDelegate:201 -[] Finished Spring Data repository scanning in 67 ms. Found 22 JPA repository interfaces.
+2023-05-02 10:59:34,422 INFO  TomcatWebServer:108 -[] Tomcat initialized with port(s): 8090 (http)
+2023-05-02 10:59:34,422 INFO  DirectJDKLog:173 -[] Starting service [Tomcat]
+2023-05-02 10:59:34,423 INFO  DirectJDKLog:173 -[] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-05-02 10:59:34,438 INFO  DirectJDKLog:173 -[] Initializing Spring embedded WebApplicationContext
+2023-05-02 10:59:34,439 INFO  ServletWebServerApplicationContext:292 -[] Root WebApplicationContext: initialization completed in 457 ms
+2023-05-02 10:59:34,468 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 -[] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-02 10:59:34,492 INFO  LogHelper:31 -[] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-02 10:59:34,498 INFO  HikariDataSource:110 -[] HikariPool-9 - Starting...
+2023-05-02 10:59:34,507 INFO  HikariDataSource:123 -[] HikariPool-9 - Start completed.
+2023-05-02 10:59:34,508 INFO  Dialect:175 -[] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-02 10:59:34,830 INFO  JtaPlatformInitiator:52 -[] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-02 10:59:34,831 INFO  AbstractEntityManagerFactoryBean:437 -[] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-02 10:59:34,846 INFO  ApiSecurityConfig:81 -[] !!! inside class: ApiSecurityConfig, !! method: passwordEncoder
+2023-05-02 10:59:35,088 INFO  ApiSecurityConfig:50 -[] !!! inside class: ApiSecurityConfig, !! method: configure(AuthenticationManagerBuilder)
+2023-05-02 10:59:35,089 INFO  ApiSecurityConfig:66 -[] !!! inside class: ApiSecurityConfig, !! method: jwtAuthFilterRegister(JwtAuthenticationFilter filter)
+2023-05-02 10:59:35,101 INFO  RegistrationBean:50 -[] Filter jwtAuthenticationFilter was not registered (disabled)
+2023-05-02 10:59:35,248 INFO  ApiSecurityConfig:75 -[] !!! inside class: ApiSecurityConfig, !! method:authenticationManagerBean
+2023-05-02 10:59:35,529 INFO  ApiSecurityConfig:50 -[] !!! inside class: ApiSecurityConfig, !! method: configure(AuthenticationManagerBuilder)
+2023-05-02 10:59:35,530 INFO  ApiSecurityConfig:56 -[] !!! inside class: ApiSecurityConfig, !! method: configure(HttpSecurity http)
+2023-05-02 10:59:35,532 INFO  ApiSecurityConfig:44 -[] !!! inside class: ApiSecurityConfig, !! method: configure(WebSecurity web)
+2023-05-02 10:59:35,532 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/signin']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:59:35,532 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/signin']
+2023-05-02 10:59:35,533 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/sendlink']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:59:35,533 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/sendlink']
+2023-05-02 10:59:35,533 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/logout/*']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:59:35,533 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/logout/*']
+2023-05-02 10:59:35,533 WARN  WebSecurity:305 -[] You are asking Spring Security to ignore Ant [pattern='/login/change_password']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-02 10:59:35,533 INFO  DefaultSecurityFilterChain:52 -[] Will not secure Ant [pattern='/login/change_password']
+2023-05-02 10:59:35,541 INFO  PropertySourcedRequestMappingHandlerMapping:69 -[] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-02 10:59:35,574 INFO  DefaultSecurityFilterChain:55 -[] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10075d41, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5832fbe5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c8f1866, org.springframework.security.web.header.HeaderWriterFilter@ad3b979, org.springframework.web.filter.CorsFilter@76e1b2a0, org.springframework.security.web.authentication.logout.LogoutFilter@7f7e171a, com.narvee.usit.filter.JwtAuthenticationFilter@91c37a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c023856, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b8d5cde, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5097ce55, org.springframework.security.web.session.SessionManagementFilter@5c3b679c, org.springframework.security.web.access.ExceptionTranslationFilter@71c83ea7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25807a0b]
+2023-05-02 10:59:35,599 INFO  OptionalLiveReloadServer:59 -[] LiveReload server is running on port 35729
+2023-05-02 10:59:35,675 INFO  TomcatWebServer:220 -[] Tomcat started on port(s): 8090 (http) with context path '/usit'
+2023-05-02 10:59:35,676 INFO  DocumentationPluginsBootstrapper:160 -[] Context refreshed
+2023-05-02 10:59:35,677 INFO  DocumentationPluginsBootstrapper:163 -[] Found 1 custom documentation plugin(s)
+2023-05-02 10:59:35,689 INFO  ApiListingReferenceScanner:41 -[] Scanning for api listing references
+2023-05-02 10:59:35,733 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllMailsUsingGET_1
+2023-05-02 10:59:35,734 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getMailByIDUsingGET_1
+2023-05-02 10:59:35,736 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: downloadresumeUsingGET_1
+2023-05-02 10:59:35,737 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: removeFileUsingGET_1
+2023-05-02 10:59:35,741 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadMultipleFile2UsingPOST_1
+2023-05-02 10:59:35,762 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingGET_1
+2023-05-02 10:59:35,764 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: duplicateCheckUsingGET_1
+2023-05-02 10:59:35,771 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadexcelUsingPOST_1
+2023-05-02 10:59:35,784 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllRolesUsingGET_1
+2023-05-02 10:59:35,793 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_1
+2023-05-02 10:59:35,796 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_2
+2023-05-02 10:59:35,802 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingPATCH_3
+2023-05-02 10:59:35,804 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getAllRolesUsingGET_2
+2023-05-02 10:59:35,807 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: listrecruiterUsingGET_1
+2023-05-02 10:59:35,810 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: approveVMSUsingGET_1
+2023-05-02 10:59:35,811 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: changeStatusUsingGET_2
+2023-05-02 10:59:35,812 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: deleteUsingDELETE_1
+2023-05-02 10:59:35,813 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: duplicateCheckUsingGET_2
+2023-05-02 10:59:35,815 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: gateallUsingGET_1
+2023-05-02 10:59:35,816 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: getbyIdUsingGET_1
+2023-05-02 10:59:35,818 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: uploadexcelUsingPOST_2
+2023-05-02 10:59:35,820 INFO  CachingOperationNameGenerator:40 -[] Generating unique operation named: findPaginatedUsingGET_1
+2023-05-02 10:59:35,825 INFO  StartupInfoLogger:61 -[] Started UsitPortalApplication in 1.872 seconds (JVM running for 234637.905)
+2023-05-02 10:59:35,826 INFO  ConditionEvaluationDeltaLoggingListener:63 -[] Condition evaluation unchanged
+2023-05-02 11:00:00,027 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:01:02,843 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:02:00,016 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:03:00,019 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:04:00,036 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:05:02,863 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:06:03,491 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:07:00,035 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:08:00,032 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:09:00,027 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:10:03,233 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:11:00,022 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:12:02,947 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:13:02,825 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:14:00,036 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:15:00,014 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:16:02,727 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:17:00,015 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:18:00,012 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:19:00,028 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:20:00,036 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:21:00,033 INFO  ConsultantServiceImpl:556 -[] In scheduling
+2023-05-02 11:22:00,026 INFO  ConsultantServiceImpl:556 -[] In scheduling

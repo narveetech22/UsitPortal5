@@ -1,0 +1,64 @@
+insert into roles(rolename,addedby, createddate,updatedby,status,roleno) values('Super Admin',1,NOW(),0,'Active',1);
+
+insert into users(department,designation, email, fullname, password, pseudoname, status, role_roleid, 
+createddate, isactive,manager,teamlead,locked)
+values('Administration','Super Admin', 'saikiran@narveetech.com', 'Super Admin',
+ '$2a$10$BpLzUpGuL3anvsF5JIl8mOxWTsBddz8SYkHpU43l83iruXcJECwDi', 'Super Admin', 'Active', 1,NOW(),0,0,0,0);
+
+
+username = saikiran@narveetech.com
+password = Narvee123$
+
+insert into requirment(category,createddate,updatedby,postedon,jobtitle,location,vendor,employmenttype,maxnumber,reqnumber,status)
+values('Java',NOW(),0,NOW(),'Java Developer','Hyderabad','Narvee Technologies','Full Time',1,'Intreq-0001','Active');
+
+update requirment set postedon=NOW() , jobtitle='Java Developer' ,location='Hyderabad' ,vendor='Narvee Technologies' ,employmenttype='Full Time' where id=1
+
+return repository.findAll(Sort.by(Sort.Direction.ASC, "statename"));
+
+
+https://www.cyberciti.biz/faq/linux-display-date-and-time/
+
+ALTER TABLE extractemail MODIFY mailsubject TEXT ;
+ALTER TABLE extractemail MODIFY mailto TEXT ;
+ALTER TABLE extractemail MODIFY mailcc TEXT ;
+
+select u.userid, u.fullname,u.pseudoname,u.department,u.designation,u.email, 
+u.personalcontactnumber,m.fullname as manger, m.pseudoname as managersudo,t.fullname as tlname,
+t.pseudoname as tlsudo from users u,users m, users t where u.manager = m.userid and t.userid=u.teamlead and u.userid = 14;
+select u.status,u.userid, u.fullname,u.pseudoname,u.department,u.designation,u.email, 
+u.personalcontactnumber,
+(select  m.pseudoname from users m where m.userid=u.manager) as manager ,
+(select  t.pseudoname from users t where t.userid=u.teamlead) as teamlead 
+from users u where  u.userid = 20
+
+@PathVariable("startDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate
+
+
+ OPT
+ CPT
+ GC EAD
+ US Citizen(Cityzen)
+ 
+ narvee host mail
+ spring.mail.port=587
+spring.mail.host=smtp.narveetech.com
+spring.mail.username=saikiran@narveetech.com
+#saikiran@narveetech.com
+spring.mail.password=Narvee123$
+spring.mail.protocol=smtp
+spring.mail.defaultEncoding=UTF-8
+
+gmail host
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=<Login User to SMTP server>
+spring.mail.password=<Login password to SMTP server>
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+
+Properties properties = new Properties();
+		properties.setProperty("mail.store.protocol", "imaps");
+		Session session = Session.getDefaultInstance(properties);
+		store.connect("imap.gmail.com",userName, password);
